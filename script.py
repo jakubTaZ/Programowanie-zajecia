@@ -3,7 +3,7 @@ import numpy as np
 import json
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from functions import hypothesis, compute_cost, gradient_descent
+from functions import hypothesis, koszt, gradient_descent
 data = pd.read_csv('insurance.csv')
 with open('params.json', 'r') as f:
     params = json.load(f)
